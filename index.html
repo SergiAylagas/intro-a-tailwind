@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pàgina Responsive</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-center space-x-4">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="location.href='#sobre-mi'">Sobre mi</button>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="location.href='#projectes'">Projectes</button>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="location.href='#contacte'">Contacte</button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-4">
+    <!-- Sobre mi Section -->
+    <section id="sobre-mi" class="my-8 bg-black text-white p-8 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-4 md:mb-0">
+        <h2 class="text-2xl font-bold mb-4">Sobre mi</h2>
+        <p class="mb-4">Hem dic Sergi, tinc 19 anys i estudio DAW (Desenvolupament d'Aplicacions Web). M'apassiona la programació i el disseny, i m'encanta crear projectes que millorin l'experiència d'usuari.</p>
+        <p class="mb-4">Tinc coneixements en HTML, CSS i JavaScript, i sempre estic aprenent noves tecnologies i tendències en el món del desenvolupament web. M'agrada treballar en equip i compartir idees amb altres professionals del sector.</p>
+        <p class="mb-4">A més, sóc un gran aficionat a la fotografia i a la música, i sempre busco la manera de combinar les meves passions amb el meu treball. Estic emocionat per seguir creixent com a desenvolupador i afrontar nous reptes.</p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img class="w-1/2 h-auto rounded" src="img/img3.jpg" alt="Imatge sobre mi">
+      </div>
+    </section>
+
+    <!-- Projectes Section -->
+    <section id="projectes" class="my-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Projectes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="project-container bg-white p-4 rounded shadow">
+          <img class="w-1/2 h-auto mx-auto rounded mb-4" src="img/img1.jpg" alt="Imatge projecte 1">
+          <p><strong>Projecte Java:</strong> Aquest projecte és una aplicació de gestió d'inventari desenvolupada en Java. Permet als usuaris afegir, eliminar i modificar articles, així com visualitzar el llistat complet d'inventari. Utilitza una interfície gràfica amb JavaFX per a una experiència d'usuari intuïtiva. He implementat funcionalitats com la cerca d'articles i l'exportació de dades a fitxers CSV. Aquest projecte m'ha ajudat a millorar les meves habilitats en programació orientada a objectes i en la creació d'interfícies d'usuari atractives.</p>
+        </div>
+        <div class="project-container bg-white p-4 rounded shadow">
+          <img class="w-1/2 h-auto mx-auto rounded mb-4" src="img/img2.jpg" alt="Imatge projecte 2">
+          <p><strong>Projecte HTML:</strong> Aquest projecte és una pàgina web personal creada amb HTML i CSS. La web inclou seccions com "Sobre mi", "Projectes" i "Contacte", i està dissenyada per ser responsive, adaptant-se a diferents mides d'equip. He utilitzat elements multimèdia com imatges i vídeos per fer-la més interactiva. També he aplicat bones pràctiques d'accessibilitat i SEO per garantir que la pàgina sigui fàcil d'utilitzar i visible en cercadors. Aquesta experiència m'ha permès aprofundir en la creació de dissenys atractius i funcionals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacte Section -->
+    <section id="contacte" class="my-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Contacte</h2>
+      <div class="contact-content bg-white p-4 rounded shadow inline-block">
+        <p>Pots connectar amb mi a través del correu electrònic: <span class="correu text-blue-500">sergi.aylagas@cirvianum.cat</span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center p-4">
+    <p>&copy; 2024 Pàgina Responsive</p>
+  </footer>
+
+</body>
+
+</html>
