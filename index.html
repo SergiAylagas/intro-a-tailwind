@@ -1,110 +1,197 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
-    <title>Vite App</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Showcase</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="p-8">
+  <h1 class="text-4xl font-bold mb-8">Tailwind Showcase</h1>
+
+  <!-- Colors and Backgrounds-->
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Colors and Backgrounds with Opacity</h2>
+    <div class="flex space-x-0">
+      <div
+        class="flex-1 h-16 bg-white bg-opacity-25 text-black flex items-center justify-center border border-gray-300">
+      </div>
+      <div
+        class="flex-1 h-16 bg-red-500 bg-opacity-25 text-black flex items-center justify-center border border-red-700">
+      </div>
+      <div
+        class="flex-1 h-16 bg-yellow-500 bg-opacity-25 text-black flex items-center justify-center border border-yellow-700">
+      </div>
+      <div
+        class="flex-1 h-16 bg-green-500 bg-opacity-25 text-black flex items-center justify-center border border-green-700">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <div class="flex space-x-0">
+      <div class="flex-1 h-16 bg-white text-black flex items-center justify-center border border-gray-300">
+      </div>
+      <div class="flex-1 h-16 bg-gray-200 text-black flex items-center justify-center border border-gray-400">
+      </div>
+      <div class="flex-1 h-16 bg-gray-400 text-black flex items-center justify-center border border-gray-500">
+      </div>
+      <div class="flex-1 h-16 bg-gray-600 text-white flex items-center justify-center border border-gray-700">
+      </div>
+    </div>
+  </section>
+
+  <!-- Text Sizes -->
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Text</h2>
+    <p class="text-sm">This is a small text.</p>
+    <p class="text-base">This is a base text.</p>
+    <p class="text-lg">This is a large text.</p>
+    <p class="text-xl">This is an extra large text.</p>
+    <p class="text-3xl">This is a 3x extra large text.</p>
+    <p class="text-4xl">This is a 4x extra large text.</p>
+    <p class="text-5xl">This is a 5x extra large text.</p>
+    <p class="text-8xl">This is an 8x extra large text.</p>
+    <p class="text-9xl">This is a 9x extra large text.</p>
+  </section>
+
+  <!-- Text Decoration -->
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Text Decoration</h2>
+    <p class="underline">This is an underlined text.</p>
+    <p class="line-through">This is a line-through text.</p>
+    <p class="underline">
+      This is an underlined and line-through text.
+    </p>
+  </section>
+
+  <!-- Text Alignment -->
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Text Alignment</h2>
+    <p class="text-left">This is a left-aligned text.</p>
+    <p class="text-center">This is a center-aligned text.</p>
+    <p class="text-right">This is a right-aligned text.</p>
+  </section>
+
+  <!-- Sizes -->
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Sizes</h2>
+    <div class="flex space-x-0">
+      <div
+        class="flex-1 h-16 bg-white bg-opacity-25 text-black flex items-center justify-center border border-gray-300">
+        XS
+      </div>
+      <div
+        class="flex-1 h-16 bg-gray-200 bg-opacity-25 text-black flex items-center justify-center border border-gray-400">
+        SM
+      </div>
+      <div
+        class="flex-1 h-16 bg-gray-400 bg-opacity-25 text-black flex items-center justify-center border border-gray-500">
+        BASE
+      </div>
+      <div
+        class="flex-1 h-16 bg-gray-600 bg-opacity-25 text-white flex items-center justify-center border border-gray-700">
+        LG
+      </div>
+    </div>
+  </section>
+
+  <!-- Borders -->
+  <section class="bg-gray-100 p-6 mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Borders</h2>
+    <div class="flex space-x-0">
+      <div
+        class="flex-1 h-16 bg-gray-200 bg-opacity-25 text-black flex items-center justify-center border border-gray-400">
+      </div>
+      <div
+        class="flex-1 h-16 bg-gray-400 bg-opacity-25 text-black flex items-center justify-center border border-gray-500">
+      </div>
+      <div
+        class="flex-1 h-16 bg-gray-600 bg-opacity-25 text-black flex items-center justify-center border border-gray-700 rounded-lg">
+      </div>
+      <div
+        class="flex-1 h-16 bg-gray-800 bg-opacity-25 text-black flex items-center justify-center border border-gray-800 rounded-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Margins -->
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Margins</h2>
     <div class="space-y-4">
-      <div class="w-96 bg-orange-500 shadow rounded">
-        w-96
+      <div class="bg-gray-200 bg-opacity-25 text-black border border-gray-400 m-6">
+        This div has a margin of 1.5rem on all sides.
       </div>
-      <div class="w-80 bg-red-500 shadow rounded">
-        w-80
+      <div class="bg-gray-400 bg-opacity-25 text-black border border-gray-500 mx-6 my-12">
+        This div has a horizontal margin of 1.5rem and a vertical margin of 3rem.
       </div>
-      <div class="w-72 bg-yellow-500 shadow rounded">
-        w-72
-      </div>
-      <div class="w-64 bg-green-500 shadow rounded">
-        w-64
-      </div>
-      <div class="w-60 bg-blue-500 shadow rounded">
-        w-60
-      </div>
-      <div class="w-56 bg-indigo-500 shadow rounded">
-        w-56
-      </div>
-      <div class="w-52 bg-purple-500 shadow rounded">
-        w-52
-      </div>
-      <div class="w-48 bg-pink-500 shadow rounded">
-        w-48
+      <div class="bg-gray-600 bg-opacity-25 text-black border border-gray-700 mt-4 mr-8 mb-12 ml-16">
+        This div has a margin of 1rem on the top, 2rem on the right, 3rem on the bottom, and 4rem on the left.
       </div>
     </div>
-    <div class="flex p-6 font-mono">
-      <div class="flex-none w-48 mb-10 relative z-10 before:absolute before:top-1 before:left-1 before:w-full before:h-full before:bg-teal-400">
-        <img src="/retro-shoe.jpg" alt="" class="absolute z-10 inset-0 w-full h-full object-cover rounded-lg" loading="lazy" />
-      </div>
-      <form class="flex-auto pl-6">
-        <div class="relative flex flex-wrap items-baseline pb-6 before:bg-black before:absolute before:-top-6 before:bottom-0 before:-left-60 before:-right-6">
-          <h1 class="relative w-full flex-none mb-2 text-2xl font-semibold text-white">
-            Retro Shoe
-          </h1>
-          <div class="relative text-lg text-white">
-            $89.00
-          </div>
-          <div class="relative uppercase text-teal-400 ml-3">
-            In stock
-          </div>
-        </div>
-        <div class="flex items-baseline my-6">
-          <div class="space-x-3 flex text-sm font-medium">
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="xs" checked />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                
-                XS
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="s" />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                S
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="m" />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                M
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="l" />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                L
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="xl" />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                XL
-              </div>
-            </label>
-          </div>
-        </div>
-        <div class="flex space-x-2 mb-4 text-sm font-medium">
-          <div class="flex space-x-4">
-            <button class="hover:bg-violet-600 px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black"  type="submit">
-              Buy now
-            </button>
-            <button class="px-6 h-12 uppercase font-semibold tracking-wider border border-slate-200 text-slate-900" type="button">
-              Add to bag
-            </button>
-          </div>
-          <button class="flex-none flex items-center justify-center w-12 h-12 text-black" type="button" aria-label="Like">
-            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
-            </svg>
-          </button>
-        </div>
-        <p class="text-xs leading-6 text-slate-500">
-          Free shipping on all continental US orders.
-        </p>
-      </form>
+  </section>
+
+  <!-- Paddings -->
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Paddings</h2>
+    <div class="bg-gray-200 bg-opacity-25 text-black border border-gray-400 p-6">
+      This div has a padding of 1.5rem on all sides.
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <div class="bg-gray-400 bg-opacity-25 text-black border border-gray-500 px-6 py-12">
+      This div has a horizontal padding of 1.5rem and a vertical padding of 3rem.
+    </div>
+    <div class="bg-gray-600 bg-opacity-25 text-black border border-gray-700 pt-4 pr-8 pb-12 pl-16">
+      This div has a padding of 1rem on the top, 2rem on the right, 3rem on the bottom, and 4rem on the left.
+    </div>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Card 1</h2>
+    <div class="border border-gray-700 p-4 mb-4 rounded-lg">
+      <div class="bg-gray-300 w-72 h-48 flex items-center justify-center text-black rounded-lg">
+        300 x 200
+      </div>
+      <h2 class="text-lg font-bold mt-4">Card Title</h3>
+      <p>This is a basic card example with an image and no flex.</p>
+      <button class="bg-blue-500 text-white py-1 px-4 rounded mt-2">Button</button>
+    </div>
+    </div>
+    <h2 class="text-2xl font-semibold mb-4">Card 2</h2>
+    <div class="border border-gray-700 p-4 mb-4 rounded-lg">
+      <h2 class="text-lg font-bold mt-4">Card Title</h3>
+      <p>This is a basic card example with no image and no flex.</p>
+      <br>
+      <ul class="list-disc ml-6">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <button class="bg-blue-500 text-white py-1 px-4 rounded mt-2">
+        Button
+      </button>
+    </div>
+  </section>
+
+  <!-- Buttons -->
+  <section class="bg-gray-100 p-6 mb-8 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Buttons</h2>
+    <div class="flex space-x-4">
+      <button class="bg-blue-500 text-white py-2 px-4">
+        Button 1
+      </button>
+      <button class="bg-green-500 text-white py-2 px-4 rounded-full">
+        Button 2
+      </button>
+      <button class="bg-red-500 text-white py-2 px-4 rounded-xl">
+        Button 3
+      </button>
+    </div>
+  </section>
+</body>
+
 </html>
