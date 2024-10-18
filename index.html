@@ -1,110 +1,66 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div class="space-y-4">
-      <div class="w-96 bg-orange-500 shadow rounded">
-        w-96
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pàgina Responsive</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-center space-x-4">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="location.href='#sobre-mi'">Sobre mi</button>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="location.href='#projectes'">Projectes</button>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="location.href='#contacte'">Contacte</button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-4">
+    <!-- Sobre mi Section -->
+    <section id="sobre-mi" class="my-8 bg-black text-white p-8 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-4 md:mb-0">
+        <h2 class="text-2xl font-bold mb-4">Sobre mi</h2>
+        <p class="mb-4">Hem dic Sergi, tinc 19 anys i estudio DAW (Desenvolupament d'Aplicacions Web). M'apassiona la programació i el disseny, i m'encanta crear projectes que millorin l'experiència d'usuari.</p>
+        <p class="mb-4">Tinc coneixements en HTML, CSS i JavaScript, i sempre estic aprenent noves tecnologies i tendències en el món del desenvolupament web. M'agrada treballar en equip i compartir idees amb altres professionals del sector.</p>
+        <p class="mb-4">A més, sóc un gran aficionat a la fotografia i a la música, i sempre busco la manera de combinar les meves passions amb el meu treball. Estic emocionat per seguir creixent com a desenvolupador i afrontar nous reptes.</p>
       </div>
-      <div class="w-80 bg-red-500 shadow rounded">
-        w-80
+      <div class="md:w-1/2 flex justify-center">
+        <img class="w-1/2 h-auto rounded" src="img/img3.jpg" alt="Imatge sobre mi">
       </div>
-      <div class="w-72 bg-yellow-500 shadow rounded">
-        w-72
-      </div>
-      <div class="w-64 bg-green-500 shadow rounded">
-        w-64
-      </div>
-      <div class="w-60 bg-blue-500 shadow rounded">
-        w-60
-      </div>
-      <div class="w-56 bg-indigo-500 shadow rounded">
-        w-56
-      </div>
-      <div class="w-52 bg-purple-500 shadow rounded">
-        w-52
-      </div>
-      <div class="w-48 bg-pink-500 shadow rounded">
-        w-48
-      </div>
-    </div>
-    <div class="flex p-6 font-mono">
-      <div class="flex-none w-48 mb-10 relative z-10 before:absolute before:top-1 before:left-1 before:w-full before:h-full before:bg-teal-400">
-        <img src="/retro-shoe.jpg" alt="" class="absolute z-10 inset-0 w-full h-full object-cover rounded-lg" loading="lazy" />
-      </div>
-      <form class="flex-auto pl-6">
-        <div class="relative flex flex-wrap items-baseline pb-6 before:bg-black before:absolute before:-top-6 before:bottom-0 before:-left-60 before:-right-6">
-          <h1 class="relative w-full flex-none mb-2 text-2xl font-semibold text-white">
-            Retro Shoe
-          </h1>
-          <div class="relative text-lg text-white">
-            $89.00
-          </div>
-          <div class="relative uppercase text-teal-400 ml-3">
-            In stock
-          </div>
+    </section>
+
+    <!-- Projectes Section -->
+    <section id="projectes" class="my-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Projectes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="project-container bg-white p-4 rounded shadow">
+          <img class="w-1/2 h-auto mx-auto rounded mb-4" src="img/img1.jpg" alt="Imatge projecte 1">
+          <p><strong>Projecte Java:</strong> Aquest projecte és una aplicació de gestió d'inventari desenvolupada en Java. Permet als usuaris afegir, eliminar i modificar articles, així com visualitzar el llistat complet d'inventari. Utilitza una interfície gràfica amb JavaFX per a una experiència d'usuari intuïtiva. He implementat funcionalitats com la cerca d'articles i l'exportació de dades a fitxers CSV. Aquest projecte m'ha ajudat a millorar les meves habilitats en programació orientada a objectes i en la creació d'interfícies d'usuari atractives.</p>
         </div>
-        <div class="flex items-baseline my-6">
-          <div class="space-x-3 flex text-sm font-medium">
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="xs" checked />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                
-                XS
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="s" />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                S
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="m" />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                M
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="l" />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                L
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="xl" />
-              <div class="relative w-10 h-10 flex items-center justify-center text-black peer-checked:bg-black peer-checked:text-white before:absolute before:z-[-1] before:top-0.5 before:left-0.5 before:w-full before:h-full peer-checked:before:bg-teal-400">
-                XL
-              </div>
-            </label>
-          </div>
+        <div class="project-container bg-white p-4 rounded shadow">
+          <img class="w-1/2 h-auto mx-auto rounded mb-4" src="img/img2.jpg" alt="Imatge projecte 2">
+          <p><strong>Projecte HTML:</strong> Aquest projecte és una pàgina web personal creada amb HTML i CSS. La web inclou seccions com "Sobre mi", "Projectes" i "Contacte", i està dissenyada per ser responsive, adaptant-se a diferents mides d'equip. He utilitzat elements multimèdia com imatges i vídeos per fer-la més interactiva. També he aplicat bones pràctiques d'accessibilitat i SEO per garantir que la pàgina sigui fàcil d'utilitzar i visible en cercadors. Aquesta experiència m'ha permès aprofundir en la creació de dissenys atractius i funcionals.</p>
         </div>
-        <div class="flex space-x-2 mb-4 text-sm font-medium">
-          <div class="flex space-x-4">
-            <button class="hover:bg-violet-600 px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black"  type="submit">
-              Buy now
-            </button>
-            <button class="px-6 h-12 uppercase font-semibold tracking-wider border border-slate-200 text-slate-900" type="button">
-              Add to bag
-            </button>
-          </div>
-          <button class="flex-none flex items-center justify-center w-12 h-12 text-black" type="button" aria-label="Like">
-            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
-            </svg>
-          </button>
-        </div>
-        <p class="text-xs leading-6 text-slate-500">
-          Free shipping on all continental US orders.
-        </p>
-      </form>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+      </div>
+    </section>
+
+    <!-- Contacte Section -->
+    <section id="contacte" class="my-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Contacte</h2>
+      <div class="contact-content bg-white p-4 rounded shadow inline-block">
+        <p>Pots connectar amb mi a través del correu electrònic: <span class="correu text-blue-500">sergi.aylagas@cirvianum.cat</span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center p-4">
+    <p>&copy; 2024 Pàgina Responsive</p>
+  </footer>
+
+</body>
+
 </html>
